@@ -1,4 +1,3 @@
-#! /home/buttercat/codefield/socket_python/WakeOnLAN_Python/.venv/bin/python
 # -*- coding: UTF-8 -*-
 from socket import *
 import sys
@@ -18,7 +17,7 @@ elif (len(sys.argv) == 2 ):
         sys.exit(1)
 
 # 255.255.255.255表示向任何网段发送广播消息
-address = ('255.255.255.255', 8)
+address = ('172.16.76.255', 9)
 
 # 创建流式socket
 s = socket(AF_INET, SOCK_DGRAM)
